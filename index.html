@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>API practice</title>
+    <link rel="stylesheet" href="style.css" />
+    <script
+      src="https://kit.fontawesome.com/a86d367dc1.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- ------------- background video part ------------- -->
+    <section class="section">
+      <video autoplay loop muted>
+        <source
+          src="./vid/3D Animation SARS-CoV-2 virus transmission leading to COVID-19.mp4"
+          type="video/mp4"
+        />
+      </video>
+
+      <!-- ---------- select country part----------- -->
+      <div class="country-selection wrapper active">
+        <header class="header">
+          <i class="fas fa-arrow-left"></i> Covid-19 live App
+        </header>
+        <section class="input-parts">
+          <p class="info-text"></p>
+          <input
+            type="text"
+            placeholder="Enter country name"
+            spellcheck="false"
+            required
+          />
+          <button id="search">Search</button>
+        </section>
+
+        <!-- ----------- covid-19 details ----------- -->
+        <section class="covid-19">
+          <div class="location">
+            <div>
+              <img class="flag" src="" alt="img" />
+              <h2 class="country">India</h2>
+            </div>
+            <img src="./img/coronavirus.png" alt="covid" />
+          </div>
+
+          <div class="details-container">
+            <div>
+              <span class="date-time"></span>
+              <h2>Corona Virus Cases</h2>
+              <span class="covid-total-cases">33,335,234,523</span>
+            </div>
+
+            <div class="today-cases">
+              <h3>Active <span class="Total-confirmed"> 232323</span></h3>
+              <h3>recovered <span class="Total-recovered"> 232443</span></h3>
+            </div>
+          </div>
+        </section>
+      </div>
+    </section>
+    <script src="app.js"></script>
+  </body>
+</html>
